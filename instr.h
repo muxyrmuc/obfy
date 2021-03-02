@@ -776,7 +776,7 @@ OBF_TYPE(unsigned long long int)
 #define DO {
 #define DONE }
 #define OR
-#define DEFAULT default:
+#define OBF_DEFAULT default:
 
 
 
@@ -825,7 +825,7 @@ DEFINE_EXTRA(2, extra_addition);
 #define DO add_entry( obf::body([&](){
 #define DONE return obf::next_step::ns_continue;})).
 #define OR join().
-#define DEFAULT add_default(obf::body([&](){
+#define OBF_DEFAULT add_default(obf::body([&](){
 
 #endif
 
